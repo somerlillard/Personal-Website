@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+html{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+body {
+    font-size: 22px;
+}
+
+p {
+
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+  }
+@keyframes blink {
+    from { border-color: rgb(41, 41, 41) }
+    to { border-color: white; }
+  }
+
+@keyframes noblink {
+    from { border-color: white }
+    to { border-color: black; }
+  }
+
+
+.container_intro{
+    display: inline-block;
+    margin-left: 500px;
+    margin-bottom: 8px;
+    width: fit-content;
+    /*margin: auto;
+    width: 100% or 50%;
+    padding-bottom: 0px;*/
+}
+
+.header{
+    margin-bottom: 10px;
+}
+.intro{
+    /*text-shadow: 1px 1px 10px white;*/
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-size: 55px;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+    typing 1.3s steps(20, end) forwards,
+    blink 1.7s infinite;
+}
+/*
+.name{
+    color: white;
+    /*text-shadow: 1px 1px 10px white;
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-size: 55px;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+    typing 2s steps(10, end) forwards,
+    blink 1.2s infinite;
+    animation-delay: 3s;
+}
+*/
+
+
+.pic{
+    display: block;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.student{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+}
+.navbar{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+
+.navbar ul li{
+    display: list-item;
+    list-style-type: none;
+    margin-right: 50px;
+    padding-bottom: 25px;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover{
+ color: rgb(172, 164, 164);   
+}
+
+.home{
+    /*border: 5px, solid, white;
+    border-color: white;
+    border-radius: 5px;
+    border-style:dotted;
+    */
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: 'PT Serif';
+    font-size: 25px;
+
+}
+
+.about{
+    position: absolute;
+    top: 150px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.about_d{
+    font-size: 20px;
+}
