@@ -325,16 +325,15 @@ img {
     transition: background-color .4s;
 }
 /*surrounding headshot links & lines*/
-.home__social{
-    height: max-content;
+.home__social {
     position: absolute;
     left: -3rem;
     top: 0;
     bottom: 0;
-    margin: auto 0;
     display: grid;
+    align-content: center;
     row-gap: 1rem;
-}
+ }
 .home__social-link{
     background-color: var(--black-color-light);
     color: var(--white-color);
@@ -722,9 +721,6 @@ img {
     }
     .nav__link::after{
         background-color: var(--title-color);
-    }
-    .active-link{
-        color: var(--title-color);
     }
     .home__container{
         grid-template-columns: repeat(2, 460px);
